@@ -585,8 +585,8 @@
 
   <div class="screen-content">
     <div class="beneficiary-banner">
-      <div class="banner-name">boose</div>
-      <div class="banner-phone">0825934659</div>
+      <div class="banner-name">sambo</div>
+      <div class="banner-phone">0726031635</div>
       <div class="verified-pill">Not selfie verified</div>
       <div class="tab-row">
         <div class="tab-item active">Payment</div>
@@ -616,12 +616,12 @@
         <span class="currency-symbol">R</span>
         <input type="text" inputmode="decimal" id="amountInputField" class="editable-field" value="39.00" onfocus="handleAmountFocus()" onblur="handleAmountBlur()">
       </div>
-      <div id="dynamicHistoryLine" class="history-timestamp-note">Last Paid: R29.00 on 8 Jun 2026 at 19:56</div>
+      <div id="dynamicHistoryLine" class="history-timestamp-note">Last Paid: R350.00 on 8 Jun 2026 at 19:56</div>
     </div>
 
     <div class="input-data-block" style="margin-top: 14px;">
       <label style="color: #757575;">Verified accountholder</label>
-      <div class="static-value-text less-visible-name">Mr Nemutadani </div>
+      <div class="static-value-text less-visible-name">Mr Sambo</div>
     </div>
 
     <div class="input-data-block" style="margin-top: 14px;">
@@ -631,7 +631,7 @@
 
     <div class="input-data-block" style="margin-top: 14px;">
       <label style="color: #757575;">My statement description</label>
-      <input type="text" id="statementDescInput" class="editable-field" value="boose">
+      <input type="text" id="statementDescInput" class="editable-field" value="sambo">
     </div>
 
     <div class="section-label" style="margin-top: 10px;">Payment notification</div>
@@ -658,12 +658,12 @@
 
   <div id="modalMaskContainer" class="popup-window-mask">
     <div class="native-modal-box">
-      <div class="modal-headline">You are about to make a payment to Mr Nemutadani</div>
+      <div class="modal-headline">You are about to make a payment to Mr Sambo</div>
       <div class="modal-grey-card">
         <div class="modal-blue-vertical-bar"></div>
         <div class="modal-card-content">
           <div>
-            <div class="modal-recipient-title">Mr Nemutadani</div>
+            <div class="modal-recipient-title">Mr Sambo</div>
             <div class="modal-recipient-sub">Number</div>
             <div class="modal-recipient-sub" style="color:#212121;">0825934659 </div>
           </div>
@@ -681,7 +681,7 @@
       <div class="success-checkmark-circle">
         <svg class="checkmark-svg" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
       </div>
-      <div id="successMessageTarget" class="success-message-string">You've paid R39.00 to bosse.</div>
+      <div id="successMessageTarget" class="success-message-string">You've paid R350.00 to Sambo.</div>
       <div class="success-date-string">Effective date: Today</div>
     </div>
     <div class="success-button-stack">
@@ -718,7 +718,7 @@
       timestampNote.innerHTML = 'Last Paid: <span class="danger-color">R0.01 11 Jun 2026 at 11:54</span>';
     } else {
       iconContainer.innerHTML = `<svg viewBox="0 0 24 24" style="width:26px; height:26px; fill:currentColor;"><path d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"/></svg>`;
-      timestampNote.innerHTML = 'Last Paid: R29.00 on 8 Jun 2026 at 19:56';
+      timestampNote.innerHTML = 'Last Paid: R350.00 on 8 Jun 2026 at 19:56';
     }
 
     document.getElementById('accountSelectionMenu').style.display = 'none';
@@ -777,7 +777,7 @@
       const finalAmountValue = parseFloat(document.getElementById('amountInputField').value) || 0;
       document.getElementById('modalMaskContainer').style.display = 'none';
 
-      document.getElementById('successMessageTarget').innerHTML = `You've paid R${finalAmountValue.toFixed(2)} to Boose.`;
+      document.getElementById('successMessageTarget').innerHTML = `You've paid R${finalAmountValue.toFixed(2)} to sambo.`;
       document.getElementById('successLayoutView').style.display = 'flex';
 
       confirmBtn.textContent = originalText;
